@@ -1,0 +1,132 @@
+
+R version 2.13.1 (2011-07-08)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-apple-darwin9.8.0/x86_64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "my1rpack"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> library('my1rpack')
+> 
+> assign(".oldSearch", search(), pos = 'CheckExEnv')
+> cleanEx()
+> nameEx("my1rpack-package")
+> ### * my1rpack-package
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: my1rpack
+> ### Title: Homework 2 for Mathematical Modeling
+> ### Aliases: my1rpack
+> ### Keywords: package
+> 
+> ### ** Examples
+> 
+> require(my1rpack)
+> problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)
+Loading required package: tikzDevice
+Warning: package 'tikzDevice' was built under R version 2.13.2
+Loading required package: filehash
+filehash: Simple key-value database (2.2 2011-07-21)
+tikzDevice: A Device for R Graphics Output in PGF/TikZ Format (v0.6.2)
+Checking for a LaTeX compiler...
+
+
+A working LaTeX compiler was found by checking:
+	The PATH using the command pdflatex
+
+Global option tikzLatex set to:
+	/usr/texbin/pdflatex
+
+pdfTeX 3.1415926-2.4-1.40.13 (TeX Live 2012)
+kpathsea version 6.1.0
+
+
+
+A working XeLaTeX compiler was found by checking:
+	The PATH using the command xelatex
+
+Global option tikzXelatex set to:
+	/usr/texbin/xelatex
+
+XeTeX 3.1415926-2.4-0.9998 (TeX Live 2012)
+kpathsea version 6.1.0
+
+
+Creating temporary TikZ metrics dictionary at:
+	/var/folders/eq/eqGKhvF2GxueqqMyJYfTJ++++TI/-Tmp-//RtmpY40wDI/tikzMetricsDictionary
+> data(problem2)
+> 
+> 
+> 
+> cleanEx()
+
+detaching ‘package:tikzDevice’, ‘package:filehash’
+
+> nameEx("problem1")
+> ### * problem1
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: problem1
+> ### Title: Function for homework 2 problem 1
+> ### Aliases: problem1
+> 
+> ### ** Examples
+> 
+> problem1('bmw1series', dnorm, c(-5, 5), 10, TRUE)
+Loading required package: tikzDevice
+Warning: package 'tikzDevice' was built under R version 2.13.2
+Loading required package: filehash
+filehash: Simple key-value database (2.2 2011-07-21)
+> 
+> 
+> 
+> cleanEx()
+
+detaching ‘package:tikzDevice’, ‘package:filehash’
+
+> nameEx("problem2")
+> ### * problem2
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: problem2
+> ### Title: Function for homework 2 problem 2
+> ### Aliases: problem2
+> ### Keywords: datasets
+> 
+> ### ** Examples
+> 
+>   data(problem2)
+> 
+> 
+> 
+> ### * <FOOTER>
+> ###
+> cat("Time elapsed: ", proc.time() - get("ptime", pos = 'CheckExEnv'),"\n")
+Time elapsed:  1.435 0.127 26.227 18.89 2.519 
+> grDevices::dev.off()
+null device 
+          1 
+> ###
+> ### Local variables: ***
+> ### mode: outline-minor ***
+> ### outline-regexp: "\\(> \\)?### [*]+" ***
+> ### End: ***
+> quit('no')

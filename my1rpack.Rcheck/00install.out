@@ -1,0 +1,11 @@
+* installing *source* package ‘my1rpack’ ...
+** R
+** data
+** preparing package for lazy loading
+** help
+警告: /Users/hj/Downloads/huinanhw2/my1rpack/man/problem2.Rd:16: unexpected TEXT ' ', expecting '{'
+*** installing help indices
+** building package indices ...
+** testing if installed package can be loaded
+
+* DONE (my1rpack)
